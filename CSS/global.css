@@ -1,0 +1,186 @@
+/* Definindo a fonte local */
+@font-face {
+  font-family: "Pixelify Sans"; /* Nome da fonte que você vai usar */
+  src: url("/font/Pixelify\ Sans.ttf") format("truetype"); /* Caminho relativo para a fonte */
+  font-weight: 400; /* Peso da fonte regular */
+  font-style: normal; /* Estilo normal */
+}
+
+/* Centralizar tudo na página */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+}
+
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.1);
+  user-select: none;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Wrapper para centralizar o conteúdo do jogo */
+.game-wrapper {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px #1173cecb;
+  position: relative;
+}
+
+h1 {
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte para torná-la mais chamativa */
+  font-weight: bold;
+  background: linear-gradient(
+    270deg,
+    #12a1e3 -4.92%,
+    #1173ce 78.24%
+  ); /* Gradiente de cor */
+  -webkit-background-clip: text; /* Aplica o fundo ao texto (em navegadores WebKit) */
+  -webkit-text-fill-color: transparent; /* Faz o texto ser preenchido com o gradiente */
+  background-clip: text; /* Aplica o gradiente no texto */
+  font-family: "Bayon", sans-serif; /* Fonte estilosa para dar um visual único */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Espaço acima do logo */
+  /* Efeito de transição para quando o mouse passar por cima */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+h4 {
+  font-family: "Pixelify Sans", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #1b1b1b;
+  line-height: 15px; /* 24 pixels de espaçamento entre as linhas */
+}
+
+/* Container do jogo */
+.game-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 15px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #1173ce;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2em;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card.flipped {
+  background-color: #ffffff;
+  color: #333;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px #1173ce;
+}
+
+/* Estilo da pontuação e botão */
+.score {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1173ce;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1173ce;
+}
+
+button:active {
+  background-color: #1173ce;
+}
+
+/* Responsividade */
+
+/* Para telas pequenas (smartphones) */
+@media (max-width: 600px) {
+  .game-wrapper {
+    width: 90%; /* Deixa o wrapper usar 90% da tela */
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Ajusta o tamanho do título */
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 80px); /* 2 colunas em vez de 4 */
+    grid-template-rows: repeat(4, 80px); /* Ajusta as linhas para 80px */
+    gap: 10px;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5em; /* Diminui o tamanho da fonte das cartas */
+  }
+
+  .score {
+    font-size: 1.2rem; /* Diminui a pontuação */
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+}
+
+/* Para telas médias (tablets) */
+@media (max-width: 900px) {
+  .game-wrapper {
+    width: 80%; /* Wrapper com largura maior em tablets */
+    padding: 25px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 90px); /* 3 colunas em vez de 4 */
+    grid-template-rows: repeat(4, 90px); /* Ajusta o tamanho das cartas */
+  }
+
+  .card {
+    width: 90px;
+    height: 90px;
+    font-size: 1.8em; /* Ajuste do tamanho da fonte */
+  }
+}
