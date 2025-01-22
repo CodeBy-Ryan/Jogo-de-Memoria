@@ -23,7 +23,7 @@ Este projeto é um **jogo da memória** interativo, desenvolvido com **HTML**, *
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/SeuUsuario/Jogo-da-Memoria.git
+    https://github.com/CodeBy-Ryan/Jogo-de-Memoria.git
     ```
 2. Abra o arquivo `index.html` no seu navegador para jogar.
 
