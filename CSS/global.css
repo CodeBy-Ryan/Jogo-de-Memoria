@@ -136,78 +136,78 @@ button:active {
 /* Estilo geral para dispositivos menores */
 @media (max-width: 600px) {
   .game-wrapper {
-    width: 90%; /* Ocupa 100% da largura da tela */
-    max-width: 400px; /* Limita a largura máxima */
-    padding: 15px; /* Reduz o espaçamento interno */
+    width: 100%; /* Ocupa 100% da largura da tela */
+    max-width: 300px; /* Limita a largura máxima */
+    padding: 5px; /* Reduz o espaçamento interno */
     margin: 0 auto; /* Centraliza horizontalmente */
   }
 
   h1 {
-    font-size: 1.2rem; /* Reduz o tamanho do título */
+    font-size: 0.9rem; /* Título menor */
   }
 
   h4 {
-    font-size: 0.9rem; /* Ajusta o tamanho do subtítulo */
+    font-size: 0.7rem; /* Subtítulo ainda menor */
   }
 
   .grid {
     grid-template-columns: repeat(3, 1fr); /* 3 colunas no grid */
-    gap: 10px; /* Espaçamento entre as cartas */
+    gap: 5px; /* Espaçamento bem reduzido entre as cartas */
   }
 
   .card {
-    width: 80%; /* Cartas ocupam a largura máxima da célula */
-    max-width: 80px; /* Limite máximo de largura */
+    width: 100%; /* Cartas ocupam toda a célula */
+    max-width: 50px; /* Cartas ainda menores */
     aspect-ratio: 1 / 1; /* Mantém o formato quadrado */
-    font-size: 1.2em; /* Ajusta o tamanho do texto */
+    font-size: 0.8rem; /* Texto reduzido nas cartas */
   }
 
   .score {
-    font-size: 1rem; /* Ajusta o tamanho da pontuação */
+    font-size: 0.8rem; /* Texto da pontuação menor */
   }
 
   button {
-    font-size: 0.9rem; /* Ajusta o tamanho do botão */
-    padding: 8px 16px; /* Reduz o padding do botão */
+    font-size: 0.7rem; /* Botão mais compacto */
+    padding: 4px 8px; /* Padding bem reduzido */
   }
 }
 
 /* Estilo para dispositivos médios (tablets) */
 @media (max-width: 900px) {
   .game-wrapper {
-    width: 90%; /* O contêiner ocupa 100% da largura */
-    max-width: 500px; /* Limite máximo para tablets */
-    padding: 20px;
+    width: 90%; /* O contêiner ocupa 90% da largura */
+    max-width: 400px; /* Limite máximo para tablets */
+    padding: 10px; /* Reduzido para tablets */
     margin: 0 auto;
   }
 
   h1 {
-    font-size: 1.5rem; /* Tamanho do título maior para tablets */
+    font-size: 1.1rem; /* Título menor para tablets */
   }
 
   h4 {
-    font-size: 1rem; /* Ajusta o subtítulo */
+    font-size: 0.8rem; /* Subtítulo menor */
   }
 
   .grid {
     grid-template-columns: repeat(4, 1fr); /* 4 colunas no grid */
-    gap: 10px; /* Ajusta o espaçamento */
+    gap: 8px; /* Menor espaçamento entre cartas */
   }
 
   .card {
-    width: 80%;
-    max-width: 80px; /* Limite máximo de largura */
-    aspect-ratio: 1 / 1; /* Garante o formato quadrado */
-    font-size: 1.5em; /* Tamanho do texto ajustado */
+    width: 100%; /* Cartas ocupam toda a célula */
+    max-width: 70px; /* Cartas menores */
+    aspect-ratio: 1 / 1; /* Mantém o formato quadrado */
+    font-size: 1rem; /* Texto reduzido */
   }
 
   .score {
-    font-size: 1.3rem; /* Ajusta a pontuação */
+    font-size: 0.9rem; /* Texto da pontuação ajustado */
   }
 
   button {
-    font-size: 1rem; /* Tamanho maior para o botão */
-    padding: 10px 20px;
+    font-size: 0.8rem; /* Botão compacto */
+    padding: 6px 12px;
   }
 }
 
@@ -215,37 +215,37 @@ button:active {
 @media (min-width: 901px) {
   .game-wrapper {
     width: 100%;
-    max-width: 600px; /* Largura máxima no desktop */
-    padding: 30px;
+    max-width: 500px; /* Largura máxima reduzida */
+    padding: 15px;
     margin: 0 auto;
   }
 
   h1 {
-    font-size: 2rem; /* Tamanho do título maior */
+    font-size: 1.3rem; /* Título ligeiramente menor */
   }
 
   h4 {
-    font-size: 1.2rem; /* Subtítulo maior */
+    font-size: 1rem; /* Subtítulo ajustado */
   }
 
   .grid {
     grid-template-columns: repeat(4, 1fr); /* 4 colunas no grid */
-    gap: 15px; /* Espaçamento entre as cartas */
+    gap: 10px; /* Espaçamento moderado entre cartas */
   }
 
   .card {
     width: 100%;
-    max-width: 120px; /* Limite máximo de largura */
+    max-width: 90px; /* Cartas menores */
     aspect-ratio: 1 / 1; /* Mantém o formato quadrado */
-    font-size: 2em; /* Tamanho do texto */
+    font-size: 1.2rem; /* Texto ajustado */
   }
 
   .score {
-    font-size: 1.5rem; /* Tamanho maior para a pontuação */
+    font-size: 1rem; /* Pontuação menor */
   }
 
   button {
-    font-size: 1.2rem; /* Tamanho do botão maior */
-    padding: 12px 24px;
+    font-size: 0.9rem; /* Botão mais compacto */
+    padding: 8px 16px;
   }
 }
