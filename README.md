@@ -4,7 +4,7 @@ Este projeto é um **jogo da memória** interativo, desenvolvido com **HTML**, *
 
 ## Imagem da Tela do Jogo
 
-![Tela do Jogo da Memória](https://github.com/user-attachments/assets/106508ae-8723-4d0c-907d-b2cd67dfd8dd)
+![Image](https://github.com/user-attachments/assets/3eda3924-f7fc-4480-9569-e41958941842)
 
 ## Funcionalidades
 
